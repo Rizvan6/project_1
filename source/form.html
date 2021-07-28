@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preload" href="fonts/oswald-regular-webfont.woff2" as="font">
+  <link rel="preload" href="fonts/oswald-medium-webfont.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
@@ -15,7 +16,27 @@
 
 <body class="page__body">
   <header class="page-header">
+    <nav class="main-nav">
+      <div class="container main-nav__container">
+        <a class="main-nav__logo-link" aria-label="Лого сайта Кэт энерджи">
+          <svg class="main-nav__logo-image main-nav__logo-image--mobile" width="" height=""></svg>
+          <!--<svg class="main-nav__logo-image main-nav__logo-image--tablet" width="" height=""></svg>
+          <svg class="main-nav__logo-image main-nav__logo-image--desktop" width="" height=""></svg>-->
+        </a>
 
+        <ul class="main-nav__list">
+          <li class="main-nav__item ">
+            <a href="index.html" class="main-nav__item-link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html" class="main-nav__item-link">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__item-link">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
   <main class="page-program">
     <section class="choose-program">
@@ -60,12 +81,12 @@
             <legend class="title-legend choose-program__title-legend">Контактные данные (владельца кота)</legend>
             <div class="data-item choose-program__data-item data-item--email">
               <label class="data-item__label" for="email">E-mail:*</label>
-              <input class="data-item__input data-item__input" type="text" name="email" id="email"
+              <input class="data-item__input data-item__input" type="email" name="email" id="email"
                 placeholder="kuklachev@gmail.com" required>
             </div>
             <div class="data-item choose-program__data-item data-item--phone">
               <label class="data-item__label" for="phone">Телефон:*</label>
-              <input class="data-item__input" type="text" name="phone" id="phone" placeholder="8 (960) 900-60-90"
+              <input class="data-item__input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90"
                 required>
             </div>
           </fieldset>
