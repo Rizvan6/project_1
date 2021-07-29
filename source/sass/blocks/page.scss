@@ -1,0 +1,16 @@
+.page {
+  font-family: $oswald-font;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 18px;
+  height: 100%;
+}
+
+.page__body {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  background-color: $basic-white;
+  color: $basic-black;
+}
