@@ -1,3 +1,10 @@
 .button {
-  color: red;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-white;
+  background-color: $basic-green;
+  width: 100%;
+  display: block;
+  padding: 11px 0;
+  border: none;
 }

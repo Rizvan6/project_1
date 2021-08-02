@@ -1,0 +1,18 @@
+.description {
+  padding: 7px 0 12px 0;
+}
+
+.description__title {
+  margin: 0 0 40px 0;
+}
+
+.description__list {
+  @include list-unstyled;
+}
+
+.description__item {
+  font-family: $arial-font;
+  color: $special_dark-grey;
+  padding-left: 80px;
+  margin-bottom: 28px;
+}

@@ -16,28 +16,31 @@
 
 <body class="page__body">
   <header class="page-header">
-    <nav class="main-nav">
-      <div class="container main-nav__container">
-        <a class="main-nav__logo-link" aria-label="Лого сайта Кэт энерджи">
-          <svg class="main-nav__logo-image main-nav__logo-image--mobile" width="" height=""></svg>
-          <!--<svg class="main-nav__logo-image main-nav__logo-image--tablet" width="" height=""></svg>
-          <svg class="main-nav__logo-image main-nav__logo-image--desktop" width="" height=""></svg>-->
-        </a>
-
-        <ul class="main-nav__list">
-          <li class="main-nav__item ">
-            <a href="index.html" class="main-nav__item-link">Главная</a>
+    <div class="container page-header__container">
+      <a class="page-header__logo-link" aria-label="Лого сайта Кэт энерджи">
+        <svg class="page-header__logo-image page-header__logo-image--mobile" width="" height=""></svg>
+        <!--<svg class="page-header__logo-image page-header__logo-image--tablet" width="" height=""></svg>
+        <svg class="page-header__logo-image page-header__logo-image--desktop" width="" height=""></svg>-->
+      </a>
+      <nav class="page-header__main-nav">
+        <button class="page-header__toogle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="page-header__list">
+          <li class="page-header__item page-header__item--current">
+            <a class="page-header__item-link">Главная</a>
           </li>
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__item-link">Каталог продукции</a>
+          <li class="page-header__item">
+            <a href="catalog.html" class="page-header__item-link">Каталог продукции</a>
           </li>
-          <li class="main-nav__item">
-            <a href="form.html" class="main-nav__item-link">Подбор программы</a>
+          <li class="page-header__item">
+            <a href="form.html" class="page-header__item-link">Подбор программы</a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
+
   <main class="page-catalog">
     <div class="container">
       <h1 class="title catalog__title">Каталог продукции</h1>

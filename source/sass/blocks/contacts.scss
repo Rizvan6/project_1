@@ -1,0 +1,17 @@
+.contacts__address {
+  padding: 28px 0 26px 0;
+}
+
+.contacts__text-strong {
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $strong-color;
+}
+
+.contacts__text {
+  font-family: $arial-font;
+  line-height: 20px;
+  color: $special_dark-grey;
+  margin: 0;
+}
