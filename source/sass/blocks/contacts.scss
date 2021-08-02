@@ -1,3 +1,9 @@
+.contacts {
+  &--background {
+    background-color: $basic-grey;
+  }
+}
+
 .contacts__address {
   padding: 28px 0 26px 0;
 }

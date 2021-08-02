@@ -1,16 +1,6 @@
 .title {
   font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
-
-  @media (max-width: $mobile-width-only) {
-    &--color {
-      color: $basic-white;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
-  }
+  font-size: 24px;
+  line-height: 26px;
+  color: $basic-black;
 }
