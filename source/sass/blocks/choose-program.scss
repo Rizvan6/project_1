@@ -1,14 +1,5 @@
 .choose-program {
-  padding: 27px 0 32px 0;
-}
-
-.choose-program__main-title {
-  margin: 0 0 37px 0;
-}
-
-.choose-program__text {
-  margin: 0 0 39px 0;
-  text-transform: uppercase;
+  padding: 22px 0 32px 0;
 }
 
 .choose-program__fieldset-name,
@@ -22,19 +13,23 @@
 }
 
 .choose-program__fieldset-name {
-  margin-bottom: 46px;
+  margin-bottom: 36px;
 }
 
 .choose-program__fieldset-program {
-  margin-bottom: 46px;
+  margin-bottom: 34px;
 }
 
 .choose-program__fieldset-contacts {
-  margin-bottom: 24px;
+  margin-bottom: 9px;
+}
+
+.choose-program__fieldset-comment {
+  margin-bottom: 9px;
 }
 
 .choose-program__fieldset-extra {
-  margin-bottom: 34px;
+  margin-bottom: 22px;
 }
 
 .choose-program__title {

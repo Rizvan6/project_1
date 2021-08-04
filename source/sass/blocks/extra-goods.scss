@@ -1,0 +1,25 @@
+.extra-goods {
+  padding: 25px 0 35px 0;
+}
+
+.extra-goods__title {
+  margin: 0 0 36px 0;
+}
+
+.extra-goods__gift {
+  background-image: url("../img/gift-background-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 0;
+  min-height: 289px;
+  padding: 186px 0 43px 0;
+}
+
+.extra-goods__gift-text {
+  font-family: $arial-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $basic-white;
+  margin: 0;
+}

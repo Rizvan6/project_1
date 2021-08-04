@@ -43,17 +43,18 @@
 
   <main class="page-program">
 
-
+    <div class="container page-program__container">
+      <h1 class="main-title page-program__main-title">Подбор программы</h1>
+      <p class="page-program__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
+    </div>
 
     <section class="choose-program">
       <div class="container choose-program__container">
-        <h2 class="main-title choose-program__main-title">Подбор программы</h2>
-        <p class="choose-program__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
-
         <form action="#" class="choose-program__form" name="form-program" method="POST">
-
           <fieldset class="choose-program__fieldset-name">
-            <h3 class="visually-hidden">Данные кота</h3>
+            <legend class="choose-program__legend">
+              <h2 class="visually-hidden">Данные кота</h2>
+            </legend>
             <ul class="choose-program__name-list">
               <li class="data-item choose-program__data-item">
                 <label class="data-item__label" for="name">Имя:*</label>
@@ -71,7 +72,9 @@
           </fieldset>
 
           <fieldset class="choose-program__fieldset-program">
-            <h3 class="visually-hidden">Программа для кота</h3>
+            <legend class="choose-program__legend">
+              <h2 class="visually-hidden">Программа для кота</h2>
+            </legend>
             <ul class="choose-program__program-list">
               <li class="choice choose-program__choice choice--radio">
                 <input class="choice__input" type="radio" name="program" value="weight-lose" id="weight-lose">
@@ -89,7 +92,9 @@
           </fieldset>
 
           <fieldset class="choose-program__fieldset-contacts">
-            <h3 class="title choose-program__title">Контактные данные (владельца кота)</h3>
+            <legend class="choose-program__legend">
+              <h2 class="title choose-program__title">Контактные данные (владельца кота)</h2>
+            </legend>
             <ul class="choose-program__contacts-list">
               <li class="data-item choose-program__data-item data-item--email">
                 <label class="data-item__label" for="email">E-mail:*</label>
@@ -105,7 +110,9 @@
           </fieldset>
 
           <fieldset class="choose-program__fieldset-comment">
-            <h3 class="title choose-program__title">Комментарий</h3>
+            <legend class="choose-program__legend">
+              <h2 class="title choose-program__title">Комментарий</h2>
+            </legend>
             <div class="data-item choose-program__data-item">
               <label class="visually-hidden" for="comment">Форма для комментарий</label>
               <textarea class="data-item__input data-item__input--textarea" name="comment" id="comment" cols="30"
@@ -114,7 +121,9 @@
           </fieldset>
 
           <fieldset class="choose-program__fieldset-extra">
-            <h3 class="title choose-program__title">Дополнительно</h3>
+            <legend class="choose-program__legend">
+              <h2 class="title choose-program__title">Дополнительно</h2>
+            </legend>
             <ul class="choose-program__extra-list">
               <li class="choice choose-program__choice choice--checkbox">
                 <input class="choice__input" type="checkbox" name="extra" value="sweetener" id="sweetener" checked>
