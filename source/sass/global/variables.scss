@@ -1,11 +1,39 @@
 //Colors
 
-$basic-white: #ffffff;
-$basic-black: #000000;
+$basic-white: rgba(255, 255, 255, 1);
+$basic-black: rgba(0, 0, 0, 1);
+$basic-green: rgba(104, 183, 56, 1);
+$basic-grey: rgba(242, 242, 242, 1);
+
+$special_dark-grey: rgba(68, 68, 68, 1);
+$special_dark-grey-2: rgba(34, 34, 34, 1);
+$strong-color: rgba(17, 17, 17, 1);
+
+$line-header: rgba(217, 217, 217, 1);
+$line-product-card: rgba(235, 235, 235, 1);
+$line-extra-good: rgba(205, 205, 205, 1);
+
+$background-color: rgba(234, 234, 234, 1);
+$background-termin: rgba(196, 196, 196, 1);
+
+$button-green-hover: rgba(94, 170, 47, 1);
+$button-grey-hover: rgba(235, 235, 235, 1);
+
+$border-color: rgba(205, 205, 205, 1);
+
+$border-input: rgba(231, 231, 231, 1);
+$border-input-hover: rgba(205, 205, 205, 1);
+$border-input-active: rgba(68, 68, 68, 1);
+$border-input-error: rgba(255, 130, 130, 1);
+
+$border-checbox-hover: rgba(186, 186, 186, 1);
+
+$gradient: rgba(104, 183, 56, 0.85);
 
 // Fonts
 
-$font-main: "Oswald", "Arial", sans-serif;
+$oswald-font: "Oswald", "Arial", sans-serif;
+$arial-font: "Arial", sans-serif;
 
 // Viewports
 

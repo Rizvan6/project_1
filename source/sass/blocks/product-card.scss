@@ -1,0 +1,32 @@
+.product-card {
+  padding: 11px 0 14px 0;
+  min-height: 190px;
+}
+
+.product-card__subtitle {
+  margin: 0;
+}
+
+.product-card__subtitle-link {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $special_dark-grey-2;
+  text-transform: uppercase;
+}
+
+.product-card__image-link {
+  display: inline-block;
+  vertical-align: top;
+  width: 140px;
+  height: 112px;
+}
+
+.product-card__list {
+  font-family: $arial-font;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey;
+  margin: 0;
+}

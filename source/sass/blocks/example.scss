@@ -1,0 +1,44 @@
+.example {
+  padding: 27px 0 25px 0;
+  background-color: $background-color;
+}
+
+.example__main-title {
+  margin: 0 0 33px 0;
+}
+
+.example__text {
+  font-family: $arial-font;
+  color: $special_dark-grey;
+  margin: 0 0 25px 0;
+}
+
+.example__list {
+  margin: 0 0 25px 0;
+}
+
+.example__term {
+  font-family: $arial-font;
+  color: $special_dark-grey;
+  font-size: 12px;
+  line-height: 12px;
+  width: 87px;
+  text-align: center;
+}
+
+.example__description {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  border: 1px solid $border-color;
+  border-radius: 3px;
+  padding: 15px 0 18px 0;
+  display: inline-block;
+  width: 124px;
+}
+
+.example__expenses {
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0 0 42px 0;
+}

@@ -1,0 +1,75 @@
+.choose-program {
+  padding: 22px 0 32px 0;
+}
+
+.choose-program__fieldset-name,
+.choose-program__fieldset-program,
+.choose-program__fieldset-contacts,
+.choose-program__fieldset-comment,
+.choose-program__fieldset-extra {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.choose-program__fieldset-name {
+  margin-bottom: 36px;
+}
+
+.choose-program__fieldset-program {
+  margin-bottom: 34px;
+}
+
+.choose-program__fieldset-contacts {
+  margin-bottom: 9px;
+}
+
+.choose-program__fieldset-comment {
+  margin-bottom: 9px;
+}
+
+.choose-program__fieldset-extra {
+  margin-bottom: 22px;
+}
+
+.choose-program__title {
+  margin: 0;
+}
+
+.choose-program__fieldset-contacts .choose-program__title {
+  margin-bottom: 35px;
+}
+
+.choose-program__fieldset-comment .choose-program__title {
+  margin-bottom: 37px;
+}
+
+.choose-program__fieldset-extra .choose-program__title {
+  margin-bottom: 34px;
+}
+
+.choose-program__name-list,
+.choose-program__program-list,
+.choose-program__contacts-list,
+.choose-program__extra-list {
+  @include list-unstyled;
+}
+
+.choose-program__data-item {
+  margin-bottom: 14px;
+}
+
+.choose-program__choice {
+  margin-bottom: 12px;
+}
+
+.choose-program__submit {
+  margin-bottom: 21px;
+}
+
+.choose-program__text-required {
+  font-family: $arial-font;
+  line-height: 16px;
+  text-align: center;
+  margin: 0;
+}

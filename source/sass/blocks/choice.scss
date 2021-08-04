@@ -1,0 +1,21 @@
+.choice {
+  position: relative;
+
+  &--radio {
+    padding-left: 45px;
+  }
+
+  &--checkbox {
+    padding-left: 46px;
+  }
+}
+
+.choice__input {
+  @include visually-hidden;
+}
+
+.choice__label {
+  font-size: 16px;
+  color: $special_dark-grey-2;
+  text-transform: uppercase;
+}

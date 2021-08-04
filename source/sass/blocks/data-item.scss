@@ -1,0 +1,25 @@
+.data-item__label {
+  font-size: 16px;
+  color: $special_dark-grey;
+  text-transform: uppercase;
+  margin-right: 13px;
+}
+
+.data-item__input {
+  font-family: $oswald-font;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_dark-grey;
+  background-color: $basic-white;
+  text-transform: uppercase;
+  border: 1px solid $border-input;
+  padding: 12px 15px 13px 15px;
+
+  &::placeholder {
+    color: $special_dark-grey;
+  }
+
+  &--textarea {
+    resize: none;
+  }
+}

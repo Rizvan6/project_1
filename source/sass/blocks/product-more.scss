@@ -1,0 +1,20 @@
+.product-more {
+  padding-top: 53px;
+  min-height: 158px;
+  text-align: center;
+}
+
+.product-more__subtitle {
+  line-height: 20px;
+  color: $strong-color;
+  text-transform: uppercase;
+  margin: 0 0 8px 0;
+}
+
+.product-more__text {
+  font-family: $arial-font;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey;
+  margin: 0 0 21px 0;
+}

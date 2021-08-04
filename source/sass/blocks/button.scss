@@ -1,3 +1,20 @@
 .button {
-  color: red;
+  font-family: $oswald-font;
+  font-style: normal;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-white;
+  background-color: $basic-green;
+  width: 100%;
+  display: block;
+  padding: 10px 0;
+  border: none;
+
+  &--more {
+    background-color: $basic-grey;
+    color: $special_dark-grey;
+  }
 }

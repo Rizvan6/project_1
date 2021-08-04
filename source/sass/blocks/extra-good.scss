@@ -1,0 +1,23 @@
+.extra-good {
+  min-height: 130px;
+  padding: 13px 0 19px 0;
+  border-top: 1px solid $line-extra-good;
+  border-bottom: 1px solid $line-extra-good;
+  margin-bottom: -1px;
+}
+
+.extra-good__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $special_dark-grey-2;
+  text-transform: uppercase;
+  margin: 0 0 13px 0;
+}
+
+.extra-good__list {
+  font-family: $arial-font;
+  line-height: 14px;
+  color: $special_dark-grey;
+  margin: 0 0 15px 0;
+}
