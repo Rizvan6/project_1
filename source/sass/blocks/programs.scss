@@ -1,12 +1,32 @@
 .programs {
-  padding: 22px 0 0 0;
+  padding: 22px 0 14px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 22px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 82px 0 20px 0;
+  }
 }
 
 .programs__program-card {
-  width: 100%;
   background-color: $basic-grey;
   padding: 30px 20px 18px 20px;
   margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 52px 57px 52px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 52px 59px 52px;
+  }
 }
 
 .programs__subtitle {
@@ -17,12 +37,35 @@
   text-transform: uppercase;
   margin: 0 0 29px 0;
   padding-left: 72px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 36px;
+    font-size: 36px;
+    padding-left: 0;
+    margin: 0 0 24px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+    margin-bottom: 73px;
+  }
 }
 
 .programs__text {
   font-family: $arial-font;
   color: $special_dark-grey;
-  margin: 0 0 38px 0;
+  margin: 0 0 42px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    color: $basic-black;
+    margin: 0 0 52px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 27px 0;
+  }
 }
 
 .programs__link {
@@ -30,4 +73,9 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 29px;
+  }
 }

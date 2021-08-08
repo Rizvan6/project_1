@@ -1,9 +1,33 @@
 .extra-goods {
   padding: 25px 0 35px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 0 76px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 13px 0 86px 0;
+  }
 }
 
 .extra-goods__title {
   margin: 0 0 36px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 80px 0;
+  }
+}
+
+.extra-goods__wrapper {
+  margin: 0 0 39px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 69px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .extra-goods__gift {
@@ -11,8 +35,11 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0 0;
-  min-height: 289px;
   padding: 186px 0 43px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 71px 124px 69px 423px;
+  }
 }
 
 .extra-goods__gift-text {
@@ -22,4 +49,12 @@
   text-align: center;
   color: $basic-white;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }

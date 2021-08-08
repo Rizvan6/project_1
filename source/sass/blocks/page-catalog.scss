@@ -1,6 +1,13 @@
 .page-catalog__container {
-  padding-top: 27px;
-  padding-bottom: 17px;
+  padding: 27px 0 17px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 0 41px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 0 42px 0;
+  }
 }
 
 .page-catalog__main-title {

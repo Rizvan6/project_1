@@ -1,10 +1,53 @@
 .page-header {
   padding: 11px 0 18px 0;
+  position: relative;
+  /*margin-bottom: 180px;*/
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 54px 0;
+  }
+}
+
+.page-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__logo-link {
+  background-color: red;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.page-header__toogle {
+  width: 24px;
+  height: 16px;
+  background-color: red;
+  border: none;
+  display: block;
+  position: relative;
+  cursor: pointer;
 }
 
 .page-header__list {
   @include list-unstyled;
   text-align: center;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.page-header__item {
+  border-top: 1px solid $line-header-item;
+  border-bottom: 1px solid $line-header-item;
+  margin-bottom: -1px;
 }
 
 .page-header__item-link {
@@ -13,6 +56,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $basic-black;
+  padding: 22px 0;
   display: block;
 
   @media (min-width: $tablet-width) {

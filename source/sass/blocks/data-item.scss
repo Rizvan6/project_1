@@ -3,6 +3,12 @@
   color: $special_dark-grey;
   text-transform: uppercase;
   margin-right: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 16px;
+  }
 }
 
 .data-item__input {
@@ -13,7 +19,13 @@
   background-color: $basic-white;
   text-transform: uppercase;
   border: 1px solid $border-input;
-  padding: 12px 15px 13px 15px;
+  padding: 13px 15px 13px 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 18px 10px 18px;
+  }
 
   &::placeholder {
     color: $special_dark-grey;

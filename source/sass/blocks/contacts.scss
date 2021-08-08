@@ -6,18 +6,35 @@
 
 .contacts__address {
   padding: 28px 0 26px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 62px 41px 51px 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 62px 89px 51px 76px;
+  }
 }
 
-.contacts__text-strong {
+.contacts__text-invitation {
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
   color: $strong-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
-.contacts__text {
+.contacts__text-address {
   font-family: $arial-font;
   line-height: 20px;
   color: $special_dark-grey;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+  }
 }
