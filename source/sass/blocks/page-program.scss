@@ -1,12 +1,15 @@
 .page-program__container {
-  padding: 27px 0 17px 0;
+  padding-top: 27px;
+  padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
-    padding: 40px 0 33px 0;
+    padding-top: 40px;
+    padding-bottom: 33px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 20px 0 33px 0;
+    padding-top: 20px;
+    padding-bottom: 33px;
   }
 }
 

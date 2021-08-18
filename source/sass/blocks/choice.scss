@@ -1,9 +1,9 @@
 .choice {
   position: relative;
-  padding-left: 46px;
+  padding: 0 0 0 46px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 60px;
+    padding: 0 0 0 60px;
   }
 }
 

@@ -1,10 +1,51 @@
 .promo {
-  background-image: linear-gradient($gradient, $gradient),
-    url("../img/background-cat-mobile.jpg");
+  background-image: linear-gradient(to bottom, $gradient 61%, $basic-white 61%), url("../img/background-cat-mobile.jpg");
+  background-color: $back-cat;
   background-repeat: no-repeat;
   background-position: 50% 0;
-  background-size: 100% 302px, 320px 302px;
+  background-size: 100%, auto 302px;
   padding: 27px 0 0 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to bottom, $gradient 61%, $basic-white 61%), url("../img/background-cat-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+    background-image: none;
+    background-position: 0;
+    background-size: 0;
+    padding: 37px 0 0 0;
+    min-height: 847px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $back-cat;
+    background-image: linear-gradient(to right, $basic-white 50%, $gradient 50%), url("../img/background-cat-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 100%, auto 696px;
+    min-height: auto;
+    padding: 223px 0 185px 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, $basic-white 50%, $gradient 50%), url("../img/background-cat-desktop@2x.jpg");
+    }
+  }
+}
+
+.promo__container {
+  position: relative;
+}
+
+.promo__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 80px;
+  }
 }
 
 .promo__main-title {
@@ -14,6 +55,8 @@
   @media (min-width: $tablet-width) {
     margin: 0 0 41px 0;
     text-align: left;
+    position: relative;
+    z-index: 2;
   }
 }
 
@@ -30,5 +73,47 @@
     color: $basic-black;
     text-align: left;
     margin: 0 0 49px 0;
+    position: relative;
+    z-index: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 52px 0;
+  }
+}
+
+.promo__image-wrapper {
+  margin: 0 0 3px 0;
+  width: 280px;
+  height: 270px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 71%;
+    width: 708px;
+    height: 609px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    top: -30%;
+    left: 39%;
+    width: 552px;
+    height: 499px;
+  }
+}
+
+.promo__image {
+  display: block;
+}
+
+.promo__link {
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    position: relative;
+    z-index: 2;
   }
 }

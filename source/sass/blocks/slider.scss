@@ -1,0 +1,126 @@
+.slider__images {
+  margin: 0 0 25px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 20px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 38px 0;
+  }
+}
+
+.slider__image-wrapper {
+  margin: 0;
+  width: 280px;
+  height: 240px;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 520px;
+  }
+
+  &--active {
+    display: block;
+  }
+}
+
+.slider__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.slider__slider-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider__controls {
+  position: relative;
+  order: 2;
+  margin: 0 18px;
+}
+
+.slider__scale {
+  height: 14px;
+  min-width: 84px;
+  background-color: $basic-white;
+  border: 1px solid $border-color;
+  border-radius: 6px;
+  padding: 3px 5px;
+
+  @media (min-width: $tablet-width) {
+    height: 6px;
+    min-width: 428px;
+    border: none;
+    background-color: $back-scale;
+    opacity: 0.6;
+  }
+
+  @media (min-width: $desktop-width) {
+    opacity: 1;
+  }
+}
+
+.slider__bar {
+  height: 6px;
+  width: 50%;
+  background-color: $basic-green;
+  border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.slider__toogle {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    width: 8px;
+    height: 8px;
+    border: 13px solid $basic-white;
+    border-radius: 50%;
+    padding: 4px;
+    background-color: $basic-green;
+    position: absolute;
+    top: -14px;
+    right: 45%;
+    cursor: pointer;
+    box-shadow: 0 0 0 1px $line-extra-good, 0 3px 5px 1px $line-extra-good;
+    display: inline-block;
+  }
+}
+
+.slider__button {
+  font-family: $oswald-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: $basic-black;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 0.5px dotted $line-button;
+  }
+
+  &--before {
+    order: 1;
+  }
+
+  &--after {
+    order: 3;
+  }
+}
