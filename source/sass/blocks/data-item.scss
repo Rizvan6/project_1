@@ -1,3 +1,9 @@
+.data-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .data-item__label {
   font-size: 16px;
   color: $special_dark-grey;
@@ -19,7 +25,8 @@
   background-color: $basic-white;
   text-transform: uppercase;
   border: 1px solid $border-input;
-  padding: 13px 15px 13px 15px;
+  padding: 12px 15px 13px 15px;
+  flex-grow: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -33,5 +40,12 @@
 
   &--textarea {
     resize: none;
+    padding: 8px 14px;
+    min-height: 150px;
+
+    @media (min-width: $tablet-width) {
+      padding: 10px 18px 10px 18px;
+      min-height: 174px;
+    }
   }
 }

@@ -10,6 +10,26 @@
   }
 }
 
+.choose-program__form {
+  @media (min-width: $tablet-width) {
+    padding: 0 37px 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "name program"
+      "contacts contacts"
+      "comment comment"
+      "extra extra"
+      "send send";
+    grid-column-gap: 80px;
+    align-items: center;
+  }
+}
+
 .choose-program__fieldset-name,
 .choose-program__fieldset-program,
 .choose-program__fieldset-contacts,
@@ -29,6 +49,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 69px 0;
+    grid-area: name;
   }
 }
 
@@ -40,17 +61,22 @@
     border: 1px solid $border-input;
     padding: 30px 27px 30px 27px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-area: program;
+  }
 }
 
 .choose-program__fieldset-contacts {
-  margin: 0 0 24px 0;
+  margin: 0 0 10px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 65px 0;
+    margin: 0 0 45px 0;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 0 50px 0;
+    grid-area: contacts;
   }
 }
 
@@ -63,11 +89,12 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 67px 0;
+    grid-area: comment;
   }
 }
 
 .choose-program__fieldset-extra {
-  margin: 0 0 41px 0;
+  margin: 0 0 17px 0;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 18px 0;
@@ -75,6 +102,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 24px 0;
+    grid-area: extra;
   }
 }
 
@@ -109,6 +137,20 @@
   @include list-unstyled;
 }
 
+.choose-program__contacts-list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.choose-program__extra-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .choose-program__name-list .choose-program__data-item {
   margin: 0 0 14px 0;
 
@@ -140,9 +182,12 @@
     margin: 0 0 20px 0;
   }
 
-  &:last-of-type {
-    margin: 0;
+  @media (min-width: $desktop-width) {
+    margin: 0 78px 20px 0;
+    width: 46.64%;
+  }
 
+  &:nth-of-type(2n) {
     @media (min-width: $desktop-width) {
       margin: 0 0 20px 0;
     }
@@ -150,16 +195,44 @@
 }
 
 .choose-program__extra-list .choose-program__choice {
-  margin: 0 0 25px 0;
+  margin: 0 0 24px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 42px 0;
+    margin: 0 123px 42px 0;
+    width: 35%;
   }
 
-  @media (max-width: $mobile-width-only) {
-    &:last-of-type {
-      margin: 0;
+  @media (min-width: $desktop-width) {
+    margin: 0 104px 42px 0;
+    width: 18.12%;
+  }
+
+  &:nth-of-type(2n) {
+    @media (min-width: $tablet-width) {
+      margin: 0 0 42px 0;
     }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 104px 42px 0;
+    }
+  }
+
+  &:nth-of-type(4n) {
+    @media (min-width: $desktop-width) {
+      margin: 0 0 42px 0;
+    }
+  }
+}
+
+.choose-program__send-form {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: send;
   }
 }
 
@@ -168,7 +241,7 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 0 61px 0 0;
     width: 282px;
   }
 

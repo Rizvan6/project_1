@@ -15,14 +15,14 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header page-header--opened">
+  <header class="page-header">
     <div class="container page-header__container">
       <a href="index.html" class="page-header__logo-link" aria-label="Лого сайта Кэт энерджи">
         <svg class="page-header__logo-image page-header__logo-image--mobile" width="191" height="38"></svg>
         <svg class="page-header__logo-image page-header__logo-image--tablet" width="174" height="52"></svg>
         <svg class="page-header__logo-image page-header__logo-image--desktop" width="202" height="59"></svg>
       </a>
-      <nav class="page-header__main-nav page-header__main-nav--opened">
+      <nav class="page-header__main-nav page-header__main-nav--closed">
         <!-- page-header__main-nav--opened для открытия -->
         <button class="page-header__toogle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -116,8 +116,8 @@
             </legend>
             <div class="data-item choose-program__data-item">
               <label class="visually-hidden" for="comment">Форма для комментарий</label>
-              <textarea class="data-item__input data-item__input--textarea" name="comment" id="comment" cols="30"
-                rows="6" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <textarea class="data-item__input data-item__input--textarea" name="comment" id="comment"
+                placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </fieldset>
 
@@ -157,11 +157,17 @@
       <h2 class="visually-hidden">Наш адрес</h2>
       <div class="container contacts__container">
         <div class="contacts__wrapper">
-          <p class="contacts__text-invitation">приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__text-address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contacts__text-invitation">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <p class="contacts__text-address">ул. Большая Конюшенная, д. 19/8 <br><span
+              class="contacts__line-break">Санкт-Петербург</span></p>
         </div>
       </div>
-      <div class="contacts__map"></div>
+      <div class="contacts__map-wrapper">
+        <iframe class="contacts__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.214376533351!2d30.319276212778192!3d59.938660051120806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sit!4v1621723025192!5m2!1sru!2sit"
+          style="border: 0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
     </section>
 
   </main>
