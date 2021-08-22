@@ -7,13 +7,18 @@
   @media (min-width: $tablet-width) {
     border: 1px solid $line-extra-good;
     padding: 26px 38px 28px 38px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     border: none;
     border-top: 1px solid $line-extra-good;
     border-bottom: 1px solid $line-extra-good;
-    padding: 15px 0 17px 0;
+    padding: 15px 0 16px 0;
+    align-items: center;
+    justify-content: flex-end;
   }
 }
 
@@ -28,7 +33,12 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    //исправить margin
+    margin: 0 0 24px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 161px;
   }
 }
 
@@ -37,14 +47,43 @@
   line-height: 14px;
   color: $special_dark-grey;
   margin: 0 0 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
-    //исправить margin
+    margin: 0 0 24px 0;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
+    justify-content: space-between;
+    margin: 0 0 0 163px;
+  }
+}
+
+.extra-good__description {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: 44px;
+    text-align: right;
+    margin: 0 0 0 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
 .extra-good__button {
   width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 27.23%;
+    margin: 0 0 0 38px;
+  }
 }

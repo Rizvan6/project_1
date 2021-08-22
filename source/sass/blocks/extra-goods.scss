@@ -19,6 +19,14 @@
 }
 
 .extra-goods__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.extra-goods__extra-goods-list {
   margin: 0 0 39px 0;
 
   @media (min-width: $tablet-width) {
@@ -27,18 +35,38 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    width: 73.443%;
   }
 }
 
 .extra-goods__gift {
-  background-image: url("../img/gift-background-mobile.png");
+  background-image: url("../img/gift-background-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0 0;
   padding: 186px 0 43px 0;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-background-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     padding: 71px 124px 69px 423px;
+    background-image: url("../img/gift-background-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-background-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 185px 0 42px 0;
+    background-image: url("../img/gift-background-desktop.jpg");
+    width: 20.082%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-background-desktop@2x.jpg");
+    }
   }
 }
 

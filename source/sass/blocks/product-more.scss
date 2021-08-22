@@ -3,16 +3,17 @@
   min-height: 158px;
   text-align: center;
   position: relative;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     min-height: 430px;
-    width: 50%;
+    width: 45.764%;
     padding: 160px 35px 36px 35px;
     border: 2px solid $basic-grey;
   }
 
   @media (min-width: $desktop-width) {
-    width: 25%;
+    width: 20.082%;
     padding: 158px 36px 38px 36px;
   }
 }
