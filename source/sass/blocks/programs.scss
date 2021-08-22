@@ -1,12 +1,45 @@
 .programs {
-  padding: 22px 0 0 0;
+  padding: 22px 0 14px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 22px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 82px 0 20px 0;
+  }
+}
+
+.programs__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .programs__program-card {
-  width: 100%;
   background-color: $basic-grey;
   padding: 30px 20px 18px 20px;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 52px 57px 52px;
+    margin: 0 0 30px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 52px 59px 52px;
+    width: 570px;
+  }
+
+  &:last-of-type {
+    margin: 0;
+
+    @media (min-width: $desktop-width) {
+      margin: 0 0 30px 0;
+    }
+  }
 }
 
 .programs__subtitle {
@@ -16,13 +49,36 @@
   color: $basic-black;
   text-transform: uppercase;
   margin: 0 0 29px 0;
-  padding-left: 72px;
+  padding: 0 0 0 72px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 36px;
+    font-size: 36px;
+    padding: 0;
+    margin: 0 0 24px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 0 162px;
+    margin: 0 0 73px 0;
+  }
 }
 
 .programs__text {
   font-family: $arial-font;
   color: $special_dark-grey;
-  margin: 0 0 38px 0;
+  margin: 0 0 42px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    color: $basic-black;
+    margin: 0 0 52px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 27px 0;
+  }
 }
 
 .programs__link {
@@ -30,4 +86,9 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 29px;
+  }
 }

@@ -1,13 +1,43 @@
 .page-program__container {
   padding-top: 27px;
   padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
+    padding-bottom: 33px;
+  }
 }
 
 .page-program__main-title {
   margin: 0 0 37px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 54px 0;
+    padding: 0 37px 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 56px 0;
+    padding: 0;
+  }
 }
 
 .page-program__text {
   margin: 0;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0 37px 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
