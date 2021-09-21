@@ -1,5 +1,5 @@
 .main-goods {
-  padding: 32px 0 25px 0;
+  padding: 24px 0 25px 0;
 
   @media (min-width: $tablet-width) {
     padding: 42px 0 0 0;
@@ -19,8 +19,6 @@
 }
 
 .main-goods__product-card {
-  margin: 0 0 19px 0;
-
   @media (min-width: $tablet-width) {
     margin: 0 60px 60px 0;
   }

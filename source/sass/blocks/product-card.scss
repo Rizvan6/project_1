@@ -1,6 +1,6 @@
 .product-card {
-  padding: 11px 0 14px 0;
-  min-height: 190px;
+  padding: 19px 0 25px 0;
+  min-height: 209px;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -8,6 +8,7 @@
     "image title"
     "image list"
     "button button";
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 8px 37px 40px 37px;
@@ -21,6 +22,32 @@
   @media (min-width: $desktop-width) {
     padding: 1px 37px 40px 37px;
     width: 20.082%;
+  }
+
+  &::before,
+  &::after {
+    @media (max-width: $mobile-width-only) {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      min-width: 320px;
+      height: 1px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $line-product-card;
+    }
+  }
+
+  &::before {
+    @media (max-width: $mobile-width-only) {
+      top: 0;
+    }
+  }
+
+  &::after {
+    @media (max-width: $mobile-width-only) {
+      bottom: -1px;
+    }
   }
 }
 
@@ -47,7 +74,7 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  color: $special_dark-grey-2;
+  color: $special-dark-grey-2;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -94,7 +121,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: $special_dark-grey;
+  color: $special-dark-grey;
   margin: 0;
   grid-area: list;
   display: grid;

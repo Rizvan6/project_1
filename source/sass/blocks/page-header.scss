@@ -36,7 +36,6 @@
 }
 
 .page-header__logo-link {
-  background-color: red;
   display: inline-block;
   vertical-align: top;
 }
@@ -202,8 +201,8 @@
   color: $basic-black;
   padding: 22px 0;
   display: block;
-  border-top: 1px solid $line-header-item;
-  border-bottom: 1px solid $line-header-item;
+  border-top: 1px solid $line-decorate-2;
+  border-bottom: 1px solid $line-decorate-2;
   margin-bottom: -1px;
 
   @media (min-width: $tablet-width) {

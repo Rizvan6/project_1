@@ -36,9 +36,12 @@
 
 .description__item {
   font-family: $arial-font;
-  color: $special_dark-grey;
+  color: $special-dark-grey;
   padding: 0 0 0 80px;
   margin: 0 0 28px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -47,6 +50,7 @@
     width: 250px;
     padding: 151px 0 0 0;
     margin: 0 0 37px 0;
+    display: block;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,6 +60,69 @@
   &:nth-child(4n) {
     @media (min-width: $desktop-width) {
       margin: 0 0 11px 0;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      background-size: 80px 80px;
+      top: 40px;
+    }
+  }
+
+  &--leaf {
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/one.svg");
+      background-repeat: no-repeat;
+      background-position: 70.5% 74%;
+    }
+
+    &::before {
+      background-image: url("../img/leaf-icon.svg");
+    }
+  }
+
+  &--powder {
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/two.svg");
+      background-repeat: no-repeat;
+      background-position: 90% 74%;
+    }
+
+    &::before {
+      background-image: url("../img/powder-icon.svg");
+    }
+  }
+
+  &--eat {
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/three.svg");
+      background-repeat: no-repeat;
+      background-position: 90% 74%;
+    }
+
+    &::before {
+      background-image: url("../img/fork-knife-icon.svg");
+    }
+  }
+
+  &--alarm {
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/four.svg");
+      background-repeat: no-repeat;
+      background-position: 96% 74%;
+    }
+
+    &::before {
+      background-image: url("../img/alarm-icon.svg");
     }
   }
 }

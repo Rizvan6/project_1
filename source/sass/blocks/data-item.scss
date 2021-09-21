@@ -2,11 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  position: relative;
 }
 
 .data-item__label {
   font-size: 16px;
-  color: $special_dark-grey;
+  color: $special-dark-grey;
   text-transform: uppercase;
   margin: 0 13px 0 0;
 
@@ -21,7 +22,7 @@
   font-family: $oswald-font;
   font-size: 16px;
   line-height: 18px;
-  color: $special_dark-grey;
+  color: $special-dark-grey;
   background-color: $basic-white;
   text-transform: uppercase;
   border: 1px solid $border-input;
@@ -35,7 +36,7 @@
   }
 
   &::placeholder {
-    color: $special_dark-grey;
+    color: $special-dark-grey;
   }
 
   &--textarea {
@@ -47,5 +48,22 @@
       padding: 10px 18px 10px 18px;
       min-height: 174px;
     }
+  }
+}
+
+.data-item__icon {
+  position: absolute;
+
+  &--email {
+    width: 18px;
+    height: 13px;
+    right: 15px;
+    fill: none;
+  }
+
+  &--phone {
+    width: 20px;
+    height: 20px;
+    right: 12px;
   }
 }

@@ -7,17 +7,64 @@
   }
 }
 
-.choice__input {
-  @include visually-hidden;
-}
-
 .choice__label {
   font-size: 16px;
-  color: $special_dark-grey-2;
+  color: $special-dark-grey-2;
   text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $border-input-hover;
+    background-color: $basic-white;
+  }
+
+  &--radio::before {
+    border-radius: 50%;
+  }
+}
+
+.choice__input {
+  @include visually-hidden;
+
+  &:checked + .choice__label::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+
+    @media (min-width: $tablet-width) {
+      top: 8px;
+    }
+  }
+
+  &:checked + .choice__label--radio::after {
+    left: 8px;
+    width: 13.5px;
+    height: 13.5px;
+    background-color: $basic-green;
+    border-radius: 50%;
+  }
+
+  &:checked + .choice__label--checkbox::after {
+    left: 6px;
+    width: 18px;
+    height: 14px;
+    background: url("../img/yes.svg") no-repeat 0 0;
+  }
+
+  &:focus-visible + .choice__label::before {
+    border-color: $border-checbox-hover;
   }
 }
