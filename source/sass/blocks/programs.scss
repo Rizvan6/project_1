@@ -130,8 +130,6 @@
 }
 
 .programs__program-card-wrapper {
-  position: relative;
-
   &--slim {
     @media (min-width: $tablet-width) {
       width: 63.47%;
@@ -149,17 +147,6 @@
 
     @media (min-width: $desktop-width) {
       width: 100%;
-    }
-  }
-
-  &::before {
-    @media (max-width: $mobile-width-only) {
-      content: "";
-      position: absolute;
-      top: 180px;
-      width: 100%;
-      height: 1px;
-      background-color: $line-decorate;
     }
   }
 }
@@ -190,6 +177,7 @@
   font-family: $arial-font;
   color: $special-dark-grey;
   margin: 0 0 42px 0;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -200,6 +188,17 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 27px 0;
+  }
+
+  &::before {
+    @media (max-width: $mobile-width-only) {
+      content: "";
+      position: absolute;
+      bottom: -23px;
+      width: 100%;
+      height: 1px;
+      background-color: $line-decorate;
+    }
   }
 }
 

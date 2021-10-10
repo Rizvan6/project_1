@@ -44,7 +44,7 @@
   background-image: url("../img/gift-background-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: 0 0;
+  background-position: center;
   padding: 186px 0 43px 0;
   position: relative;
   display: flex;
@@ -59,6 +59,7 @@
     padding: 71px 124px 69px 423px;
     background-image: url("../img/gift-background-tablet.jpg");
     flex-direction: row;
+    justify-content: flex-end;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/gift-background-tablet@2x.jpg");
@@ -70,6 +71,7 @@
     background-image: url("../img/gift-background-desktop.jpg");
     width: 20.082%;
     flex-direction: column;
+    justify-content: flex-start;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/gift-background-desktop@2x.jpg");

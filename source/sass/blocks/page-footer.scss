@@ -107,15 +107,16 @@
 }
 
 .page-footer__copyright-link {
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     width: 163px;
+    margin: 0;
   }
 }
 
