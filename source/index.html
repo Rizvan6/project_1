@@ -19,9 +19,9 @@
     <!-- page-header--opened для отступа -->
     <div class="container page-header__container">
       <a class="page-header__logo-link" aria-label="Лого сайта Кэт энерджи">
-        <svg class="page-header__logo-image page-header__logo-image--mobile" width="191" height="38"></svg>
-        <svg class="page-header__logo-image page-header__logo-image--tablet" width="174" height="52"></svg>
-        <svg class="page-header__logo-image page-header__logo-image--desktop" width="202" height="59"></svg>
+        <img class="page-header__logo-image page-header__logo-image--mobile" src="img/logo-header-mobile.svg" width="191" height="38"></img>
+        <img class="page-header__logo-image page-header__logo-image--tablet" src="img/logo-header-tablet.svg" width="174" height="52"></img>
+        <img class="page-header__logo-image page-header__logo-image--desktop" src="img/logo-header-desktop.svg" width="202" height="59"></img>
       </a>
       <nav class="page-header__main-nav page-header__main-nav--closed">
         <!-- page-header__main-nav--opened для открытия -->
@@ -71,22 +71,39 @@
     <section class="programs">
       <div class="container programs__container">
         <h2 class="visually-hidden">Программы питания для вашего кота</h2>
+
         <div class="programs__program-card programs__program-card--slim">
-          <h3 class="programs__subtitle">Похудение</h3>
-          <p class="programs__text">
-            Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
-            поможет вашему питомцу сбросить лишний вес.
-          </p>
-          <a href="#" class="programs__link">Каталог Slim</a>
+          <div class="programs__program-card-wrapper programs__program-card-wrapper--slim">
+            <h3 class="programs__subtitle">Похудение</h3>
+            <p class="programs__text">
+              Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
+              поможет вашему питомцу сбросить лишний вес.
+            </p>
+            <a href="#" class="programs__link" aria-label="каталог Slim">
+              <span class="programs__link-text">Каталог Slim</span>
+              <svg role="img" class="programs__icon" width="24" height="12">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </a>
+          </div>
         </div>
+
         <div class="programs__program-card programs__program-card--pro">
-          <h3 class="programs__subtitle">Набор массы</h3>
-          <p class="programs__text">
-            Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
-            необходимые мышцы!
-          </p>
-          <a href="#" class="programs__link">Каталог Pro</a>
+          <div class="programs__program-card-wrapper programs__program-card-wrapper--pro">
+            <h3 class="programs__subtitle">Набор массы</h3>
+            <p class="programs__text">
+              Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
+              необходимые мышцы!
+            </p>
+            <a href="#" class="programs__link" aria-label="каталог Pro">
+              <span class="programs__link-text">Каталог Pro</span>
+              <svg role="img" class="programs__icon" width="24" height="12">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </a>
+          </div>
         </div>
+
       </div>
     </section>
 
@@ -115,11 +132,11 @@
             Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и <nobr>по-прежнему</nobr>
             cпит по 16 часов в день.</p>
           <dl class="example__list">
-            <div class="example__item-wrapper">
+            <div class="example__item">
               <dt class="example__term">снижение веса</dt>
               <dd class="example__description">5 кг</dd>
             </div>
-            <div class="example__item-wrapper">
+            <div class="example__item">
               <dt class="example__term">затрачено времени</dt>
               <dd class="example__description">60 дней</dd>
             </div>
@@ -182,32 +199,41 @@
 
   <footer class="page-footer">
     <div class="container page-footer__container">
-      <a href="" class="page-footer__logo-link">
-        <!--<svg></svg>-->
-      </a>
-      <ul class="page-footer__social-list">
-        <li class="page-footer__social-item">
-          <a href="" class="page-footer__social-link">
-            <!--<svg></svg>-->
-          </a>
-        </li>
-        <li class="page-footer__social-item">
-          <a href="" class="page-footer__social-link">
-            <!--<svg></svg>-->
-          </a>
-        </li>
-        <li class="page-footer__social-item">
-          <a href="" class="page-footer__social-link">
-            <!--<svg></svg>-->
-          </a>
-        </li>
-      </ul>
-      <p class="page-footer__copyright">
-        <span class="page-footer__copyright-text">Html academy</span>
-        <a href="" class="page-footer__copyright-link">
-          <!--<svg></svg>-->
+      <div class="page-footer__wrapper">
+        <a href="#" class="page-footer__logo-link" aria-label="Лого сайта Кэт энерджи">
+          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24"></img>
         </a>
-      </p>
+        <ul class="page-footer__social-list">
+          <li class="page-footer__social-item">
+            <a href="https://vk.com" class="page-footer__social-link" arial-label="Сайт Вконтакте" target="_blank">
+              <svg role="img" class="page-footer__social-icon page-footer__social-icon--vk" width="23" height="16">
+                <use xlink:href="img/sprite.svg#vkontakte-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="page-footer__social-item">
+            <a href="https://www.instagram.com" class="page-footer__social-link" arial-label="Сайт Instagram" target="_blank">
+              <svg role="img" class="page-footer__social-icon page-footer__social-icon--instagram" width="16" height="16">
+                <use xlink:href="img/sprite.svg#instagram-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="page-footer__social-item">
+            <a href="https://www.facebook.com" class="page-footer__social-link" aria-label="Сайт Facebook" target="_blank">
+              <svg role="img" class="page-footer__social-icon page-footer__social-icon--facebook" width="22" height="22">
+                <use xlink:href="img/sprite.svg#facebook-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <a href="https://htmlacademy.ru" class="page-footer__copyright-link" aria-label="Сайт HTML Academy" target="_blank">
+          <span class="page-footer__copyright-text">HTML Academy</span>
+          <svg role="img" class="page-footer__copyright-icon" width="27" height="34">
+            <use xlink:href="img/sprite.svg#htmlacademy-icon"></use>
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
 </body>

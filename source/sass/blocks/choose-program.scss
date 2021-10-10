@@ -1,5 +1,6 @@
 .choose-program {
   padding: 22px 0 32px 0;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     padding: 33px 0 72px 0;
@@ -11,10 +12,6 @@
 }
 
 .choose-program__form {
-  @media (min-width: $tablet-width) {
-    padding: 0 37px 0 40px;
-  }
-
   @media (min-width: $desktop-width) {
     padding: 0;
     display: grid;
@@ -41,29 +38,58 @@
 }
 
 .choose-program__fieldset-name {
-  margin: 0 0 52px 0;
+  margin: 0 0 24px 0;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 72px 0;
+    padding: 0 38px 0 40px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 0 69px 0;
+    padding: 0;
     grid-area: name;
   }
 }
 
 .choose-program__fieldset-program {
-  margin: 0 0 51px 0;
+  margin: 0 0 26px 0;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 75px 0;
-    border: 1px solid $border-input;
-    padding: 30px 27px 30px 27px;
+    padding: 0 38px 0 40px;
   }
 
   @media (min-width: $desktop-width) {
     grid-area: program;
+    padding: 0;
+  }
+
+  &::before,
+  &::after {
+    @media (max-width: $mobile-width-only) {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 1px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $line-decorate;
+      min-width: 320px;
+    }
+  }
+
+  &::before {
+    @media (max-width: $mobile-width-only) {
+      top: 0;
+    }
+  }
+
+  &::after {
+    @media (max-width: $mobile-width-only) {
+      bottom: 0;
+    }
   }
 }
 
@@ -106,7 +132,7 @@
   }
 }
 
-.choose-program__fieldset-contacts .choose-program__title {
+.choose-program__fieldset-contacts .choose-program__title-wrapper {
   margin: 0 0 35px 0;
 
   @media (min-width: $tablet-width) {
@@ -114,7 +140,7 @@
   }
 }
 
-.choose-program__fieldset-comment .choose-program__title {
+.choose-program__fieldset-comment .choose-program__title-wrapper {
   margin: 0 0 37px 0;
 
   @media (min-width: $tablet-width) {
@@ -122,7 +148,7 @@
   }
 }
 
-.choose-program__fieldset-extra .choose-program__title {
+.choose-program__fieldset-extra .choose-program__title-wrapper {
   margin: 0 0 39px 0;
 
   @media (min-width: $tablet-width) {
@@ -137,10 +163,34 @@
   @include list-unstyled;
 }
 
+.choose-program__program-list {
+  padding: 28px 0 25px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 27px 30px 27px;
+    border: 1px solid $border-input;
+  }
+}
+
 .choose-program__contacts-list {
+  @media (min-width: $tablet-width) {
+    padding: 0 40px 0 38px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
+  }
+}
+
+.choose-program__fieldset-comment .choose-program__data-item {
+  @media (min-width: $tablet-width) {
+    padding: 0 40px 0 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -148,6 +198,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    padding: 0 40px 0 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -229,10 +284,12 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    padding: 0 40px 0 38px;
   }
 
   @media (min-width: $desktop-width) {
     grid-area: send;
+    padding: 0;
   }
 }
 

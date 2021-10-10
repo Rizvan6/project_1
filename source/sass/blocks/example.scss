@@ -1,6 +1,7 @@
 .example {
   padding: 27px 0 25px 0;
   background-color: $back-color;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 43px 0 64px 0;
@@ -10,6 +11,23 @@
   @media (min-width: $desktop-width) {
     padding: 0 0 70px 0;
     background: linear-gradient(to bottom, $basic-white 29%, $basic-grey 29%);
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 1px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $line-decorate-2;
+      top: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
   }
 }
 
@@ -58,7 +76,7 @@
 
 .example__text {
   font-family: $arial-font;
-  color: $special_dark-grey;
+  color: $special-dark-grey;
   margin: 0 0 25px 0;
 
   @media (min-width: $tablet-width) {
@@ -78,7 +96,7 @@
   min-width: 280px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     grid-area: l;
@@ -86,24 +104,18 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 366px;
     margin: 0 0 30px 0;
   }
 }
 
-.example__item-wrapper {
+.example__item {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  margin: 0 31px 25px 0;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 42px 25px 0;
-  }
-
-  &:nth-of-type(2n) {
-    margin-right: 0;
-  }
+  margin: 0 0 25px 0;
+  width: 44.29%;
 }
 
 .example__term {
@@ -111,7 +123,7 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  color: $special_dark-grey;
+  color: $special-dark-grey;
   background-color: $back-color;
   width: 87px;
   padding: 0 4px;
@@ -139,7 +151,8 @@
   padding: 14px 0 16px 0;
   display: inline-block;
   min-width: 124px;
-  margin: 0 0 -10px 0;
+  width: 100%;
+  margin: 0 0 -9px 0;
   grid-row: 1/2;
 
   @media (min-width: $tablet-width) {
@@ -170,8 +183,13 @@
 }
 
 .example__description-price {
+  display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    margin: 9px 0 0 0;
+  }
+
   @media (min-width: $desktop-width) {
-    display: inline-block;
     margin: 0 0 0 63px;
   }
 }

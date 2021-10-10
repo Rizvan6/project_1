@@ -30,15 +30,15 @@
 .contacts__text-invitation {
   font-weight: 400;
   font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
   color: $strong-color;
   margin: 0;
-  width: 50%;
+  width: 140px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 21px;
-    width: 27%;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,14 +49,14 @@
 .contacts__text-address {
   font-family: $arial-font;
   line-height: 20px;
-  color: $special_dark-grey;
+  color: $special-dark-grey;
   margin: 0;
-  width: 50%;
+  width: 140px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     text-align: right;
-    width: 25.5%;
+    width: 160px;
   }
 
   @media (min-width: $desktop-width) {

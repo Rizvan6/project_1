@@ -1,3 +1,9 @@
+.example__slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .slider__images {
   margin: 0 0 25px 0;
 
@@ -36,12 +42,21 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+    align-self: flex-end;
+  }
 }
 
 .slider__controls {
   position: relative;
   order: 2;
   margin: 0 18px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 24px;
+  }
 }
 
 .slider__scale {
@@ -90,7 +105,7 @@
     top: -14px;
     right: 45%;
     cursor: pointer;
-    box-shadow: 0 0 0 1px $line-extra-good, 0 3px 5px 1px $line-extra-good;
+    box-shadow: 0 0 0 1px $line-decorate-3, 0 3px 5px 1px $line-decorate-3;
     display: inline-block;
   }
 }
