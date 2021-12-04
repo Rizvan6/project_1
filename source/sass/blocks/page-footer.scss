@@ -52,6 +52,14 @@
   display: inline-block;
   vertical-align: top;
   width: 128px;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 }
 
 .page-footer__social-list {
@@ -69,7 +77,15 @@
 }
 
 .page-footer__social-link {
-  color: transparent;
+  color: $special-grey;
+
+  &:hover {
+    color: $basic-green;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 }
 
 .page-footer__social-icon {
@@ -96,6 +112,8 @@
   }
 
   &--facebook {
+    fill: none;
+    stroke: currentColor;
     width: 22px;
     height: 22px;
 
@@ -113,10 +131,19 @@
   align-items: center;
   justify-content: space-between;
   width: 280px;
+  color: $special-grey;
 
   @media (min-width: $tablet-width) {
     width: 163px;
     margin: 0;
+  }
+
+  &:hover {
+    color: $basic-green;
+  }
+
+  &:active {
+    opacity: 60%;
   }
 }
 
@@ -125,4 +152,11 @@
   font-size: 16px;
   line-height: 18.4px;
   color: $special-dark-grey;
+}
+
+.page-footer__copyright-icon {
+  display: block;
+  fill: currentColor;
+  width: 27px;
+  height: 34px;
 }

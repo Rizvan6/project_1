@@ -12,6 +12,14 @@
   display: block;
   border: none;
 
+  &:hover {
+    background-color: $button-green-hover;
+  }
+
+  &:active {
+    color: $text-opacity-active;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     padding: 17px 0;
@@ -24,6 +32,14 @@
     @media (min-width: $tablet-width) {
       font-size: 16px;
       padding: 10px 0;
+    }
+
+    &:hover {
+      background-color: $button-grey-hover;
+    }
+
+    &:active {
+      color: $text-opacity-active-2;
     }
   }
 

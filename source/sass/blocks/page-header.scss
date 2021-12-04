@@ -38,6 +38,14 @@
 .page-header__logo-link {
   display: inline-block;
   vertical-align: top;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 }
 
 .page-header__logo-image {
@@ -165,6 +173,14 @@
 
     &:nth-child(3n) {
       margin-right: 0;
+    }
+
+    &:not(.page-header__item--current):hover {
+      opacity: 60%;
+    }
+
+    &:not(.page-header__item--current):active {
+      opacity: 30%;
     }
   }
 
