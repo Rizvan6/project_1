@@ -105,8 +105,16 @@
     top: -14px;
     right: 45%;
     cursor: pointer;
-    box-shadow: 0 0 0 1px $line-decorate-3, 0 3px 5px 1px $line-decorate-3;
+    box-shadow: 0 0 0 1px $line-decorate-3, 0 2px 5px 1px $line-decorate-3;
     display: inline-block;
+
+    &:hover {
+      box-shadow: 0 0 0 1px $line-decorate-3, 0 4px 5px 1px $line-decorate-3;
+    }
+
+    &:active {
+      box-shadow: 0 0 0 1px $basic-green, 0 4px 5px 1px $line-decorate-3;
+    }
   }
 }
 
@@ -128,7 +136,15 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    border-bottom: 0.5px dotted $line-button;
+    border-bottom: 1px dotted $line-button;
+
+    &:hover {
+      border-bottom: 1px solid $line-button;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 
   &--before {

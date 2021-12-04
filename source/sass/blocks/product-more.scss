@@ -17,7 +17,7 @@
 
   @media (min-width: $desktop-width) {
     width: 20.082%;
-    padding: 158px 36px 38px 36px;
+    padding: 158px 36px 40px 36px;
   }
 
   &::before {
@@ -61,6 +61,7 @@
     font-size: 20px;
     line-height: 22px;
     margin: 0 0 23px 0;
+    width: 134px;
   }
 }
 
@@ -75,6 +76,7 @@
     font-size: 16px;
     line-height: 18px;
     margin: 0 0 87px 0;
+    width: 167px;
   }
 }
 

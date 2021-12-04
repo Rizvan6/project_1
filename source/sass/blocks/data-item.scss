@@ -49,6 +49,15 @@
       min-height: 174px;
     }
   }
+
+  &:hover {
+    border: 1px solid $border-input-hover;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $border-input-active;
+  }
 }
 
 .data-item__icon {
@@ -59,11 +68,23 @@
     height: 13px;
     right: 15px;
     fill: none;
+    stroke: $basic-black;
   }
 
   &--phone {
     width: 20px;
     height: 20px;
     right: 12px;
+    fill: $basic-black;
+  }
+}
+
+.data-item__input:focus + .data-item__icon {
+  &--email {
+    stroke: $basic-green;
+  }
+
+  &--phone {
+    fill: $basic-green;
   }
 }
