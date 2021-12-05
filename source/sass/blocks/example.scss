@@ -1,16 +1,16 @@
 .example {
-  padding: 27px 0 25px 0;
+  padding: 31px 0 34px 0;
   background-color: $back-color;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 43px 0 64px 0;
-    background: linear-gradient(to bottom, $basic-white 57%, $back-color 57%);
+    padding: 45px 0 68px 0;
+    background: linear-gradient(to bottom, $basic-white 57.3%, $back-color 57.3%);
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 0 70px 0;
-    background: linear-gradient(to bottom, $basic-white 29%, $basic-grey 29%);
+    background: linear-gradient(to bottom, $basic-white 29.5%, $basic-grey 29.5%);
   }
 
   &::before {
@@ -40,7 +40,7 @@
 }
 
 .example__wrapper {
-  margin: 0 0 42px 0;
+  margin: 0 0 40px 0;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -50,7 +50,7 @@
       "t t"
       "l e";
     align-items: center;
-    margin: 0 0 34px 0;
+    margin: 0 0 56px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,7 +70,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 146px 0;
+    margin: 0 0 142px 0;
   }
 }
 
@@ -82,12 +82,12 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin: 0 0 54px 0;
+    margin: 0 0 52px 0;
     grid-area: t;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 69px 0;
+    margin: 0 0 68px 0;
   }
 }
 
@@ -114,7 +114,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  margin: 0 0 25px 0;
+  margin: 0 0 22px 0;
   width: 44.29%;
 }
 
@@ -154,11 +154,12 @@
   width: 100%;
   margin: 0 0 -9px 0;
   grid-row: 1/2;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-    padding: 15px 0 20px 0;
+    padding: 15px 0 18px 0;
     min-width: 162px;
   }
 }
@@ -190,7 +191,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 0 63px;
+    margin: 0 0 0 59px;
   }
 }
 

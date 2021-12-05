@@ -1,5 +1,5 @@
 .promo {
-  background-image: linear-gradient(to bottom, $gradient 61%, $basic-white 61%), url("../img/background-cat-mobile.jpg");
+  background-image: linear-gradient(to bottom, $gradient 63%, $basic-white 63%), url("../img/background-cat-mobile.jpg");
   background-color: $back-cat;
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -7,7 +7,7 @@
   padding: 27px 0 0 0;
 
   @media (min-resolution: 2dppx) {
-    background-image: linear-gradient(to bottom, $gradient 61%, $basic-white 61%), url("../img/background-cat-mobile@2x.jpg");
+    background-image: linear-gradient(to bottom, $gradient 63%, $basic-white 63%), url("../img/background-cat-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
@@ -15,7 +15,7 @@
     background-image: none;
     background-position: 0;
     background-size: 0;
-    padding: 37px 0 0 0;
+    padding: 42px 0 0 0;
     min-height: 847px;
   }
 
@@ -26,7 +26,7 @@
     background-position: bottom right;
     background-size: 100%, auto 696px;
     min-height: auto;
-    padding: 223px 0 185px 0;
+    padding: 224px 0 185px 0;
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, $basic-white 50%, $gradient 50%), url("../img/background-cat-desktop@2x.jpg");
@@ -53,7 +53,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 41px 0;
+    margin: 0 0 38px 0;
     text-align: left;
     position: relative;
     z-index: 2;
@@ -99,8 +99,8 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    top: -30%;
-    left: 39%;
+    top: -29%;
+    left: 38.6%;
     width: 552px;
     height: 499px;
   }

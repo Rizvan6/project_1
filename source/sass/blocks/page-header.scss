@@ -1,5 +1,5 @@
 .page-header {
-  padding: 11px 0 18px 0;
+  padding: 12px 0 17px 0;
   background-color: transparent;
   position: relative;
 
@@ -13,7 +13,7 @@
 
   &--opened {
     @media (max-width: $mobile-width-only) {
-      margin-bottom: 195px;
+      margin-bottom: 196px;
     }
   }
 
@@ -33,6 +33,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-end;
+  }
 }
 
 .page-header__logo-link {
@@ -145,6 +149,7 @@
 
   @media (min-width: $desktop-width) {
     width: 480px;
+    padding-bottom: 4px;
   }
 }
 
@@ -152,7 +157,7 @@
   @media (max-width: $mobile-width-only) {
     position: absolute;
     min-width: 320px;
-    top: 70px;
+    top: 65px;
     right: 0;
     left: 0;
     background-color: $basic-white;
@@ -215,7 +220,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $basic-black;
-  padding: 22px 0;
+  padding: 22px 0 23px 0;
   display: block;
   border-top: 1px solid $line-decorate-2;
   border-bottom: 1px solid $line-decorate-2;
