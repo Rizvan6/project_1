@@ -23,7 +23,7 @@
       "extra extra"
       "send send";
     grid-column-gap: 80px;
-    align-items: center;
+    align-items: flex-start;
   }
 }
 
@@ -41,19 +41,19 @@
   margin: 0 0 24px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 72px 0;
+    margin: 0 0 71px 0;
     padding: 0 38px 0 40px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 69px 0;
+    margin: 0 0 70px 0;
     padding: 0;
     grid-area: name;
   }
 }
 
 .choose-program__fieldset-program {
-  margin: 0 0 26px 0;
+  margin: 0 0 28px 0;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -62,6 +62,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 0 70px 0;
     grid-area: program;
     padding: 0;
   }
@@ -97,7 +98,7 @@
   margin: 0 0 10px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 45px 0;
+    margin: 0 0 48px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -110,7 +111,7 @@
   margin: 0 0 23px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 65px 0;
+    margin: 0 0 66px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -123,7 +124,7 @@
   margin: 0 0 17px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 18px 0;
+    margin: 0 0 16px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -136,7 +137,7 @@
   margin: 0 0 35px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 76px 0;
+    margin: 0 0 74px 0;
   }
 }
 
@@ -144,7 +145,7 @@
   margin: 0 0 37px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 76px 0;
+    margin: 0 0 74px 0;
   }
 }
 
@@ -152,7 +153,7 @@
   margin: 0 0 39px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 62px 0;
+    margin: 0 0 60px 0;
   }
 }
 

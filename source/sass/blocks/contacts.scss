@@ -15,7 +15,7 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding: 62px 41px 51px 41px;
+    padding: 62px 41px 59px 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,4 +78,8 @@
   min-width: 320px;
   height: 362px;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }

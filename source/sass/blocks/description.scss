@@ -1,12 +1,12 @@
 .description {
-  padding: 14px 0 16px 0;
+  padding: 14px 0 21px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 22px 0 10px 0;
+    padding: 27px 0 10px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 20px 0 0 0;
+    padding: 24px 0 0 0;
   }
 }
 
@@ -14,7 +14,7 @@
   margin: 0 0 40px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 32px 0;
+    margin: 0 0 29px 0;
   }
 }
 
@@ -89,6 +89,10 @@
 
     &::before {
       background-image: url("../img/leaf-icon.svg");
+
+      @media (min-width: $tablet-width) {
+        background-image: url("../img/leaf-icon-tablet.svg");
+      }
     }
   }
 
@@ -101,6 +105,10 @@
 
     &::before {
       background-image: url("../img/powder-icon.svg");
+
+      @media (min-width: $tablet-width) {
+        background-image: url("../img/powder-icon-tablet.svg");
+      }
     }
   }
 
@@ -113,6 +121,10 @@
 
     &::before {
       background-image: url("../img/fork-knife-icon.svg");
+
+      @media (min-width: $tablet-width) {
+        background-image: url("../img/fork-knife-icon-tablet.svg");
+      }
     }
   }
 
@@ -125,6 +137,10 @@
 
     &::before {
       background-image: url("../img/alarm-icon.svg");
+
+      @media (min-width: $tablet-width) {
+        background-image: url("../img/alarm-icon-tablet.svg");
+      }
     }
   }
 }
